@@ -37,7 +37,6 @@
                     lastRemaining = remaining;
                 });
             }
-
         };
     }]);
 
@@ -70,8 +69,6 @@
                         }
                         promise = timeout(function () {
                             handler();
-                            //scroll a bit againg
-                            element[0].scrollTop=element[0].clientHeight/2;
                             promise = null;
                         }, timeThreshold);
                     }
